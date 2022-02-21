@@ -1,0 +1,29 @@
+.house {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    top: 10px;
+    margin: 5px;
+    
+
+    &__container {
+
+      padding: 5px;      
+      width: 260px;      
+      margin: 10px 5px;     
+
+      img {
+        width: 248px;
+        height: 297px;
+        object-fit: cover;        
+      }
+
+      h4 {
+        font-size: 14px;
+        text-transform: uppercase;       
+        color: #fff;
+        text-align: center;
+        margin-top: 9px;
+     }
+  }
+}

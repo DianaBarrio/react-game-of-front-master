@@ -1,0 +1,51 @@
+@import '../../index.scss';
+
+.search {
+
+    width: 300px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+
+    @include desktop {
+
+        width: 780px;
+        height: 32px;       
+
+    }
+
+    img {
+        width: 21px;
+        height: 21px;
+        margin: 0;
+    }
+
+
+    input {
+        width: 100px;
+        margin:0;
+        padding: 5px;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: #fff;
+        font-size: 18px;
+        
+        &::placeholder {
+            font-size: 16px ;
+        }
+
+        @include desktop {
+
+            width: 755px;
+            margin:0;
+            
+            
+            &::placeholder {
+                font-size: 16px ;
+            }
+
+        }
+    }
+}

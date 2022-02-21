@@ -1,0 +1,56 @@
+@import "../../index.scss";
+
+.navbar {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 3.75%;
+ // background: lightblue;
+
+  @include desktop {
+    
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 94vw;
+  margin: 20px auto;
+  height: 63vh;
+  padding-right: 0px;
+  overflow-y: auto;
+
+  @include desktop {
+    margin: 30px auto;
+    justify-content: space-around;
+    height: 70vh;
+    padding-right: 20px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background: rgb(83, 81, 81);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: lightgray;
+
+    width: 3px;
+    border-radius: 20px;
+    height: 5px;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}

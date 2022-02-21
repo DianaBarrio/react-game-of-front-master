@@ -1,0 +1,44 @@
+@font-face {   font-family: Game Of  Trones;   src: url(../public/GameofThrones.ttf); };
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  margin: 7px 0;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Lato", Times, serif;
+}
+
+body {
+  margin: 0;
+  font-family: Game of Trones;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  padding: 0;
+}
+
+$tablet: 768px;
+$desktop: 992px;
+$large: 1200px;
+
+@mixin tablet {
+    @media only screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media only screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+  
+  @mixin large {
+    @media only screen and (min-width: $large) {
+      @content;
+    }
+  }

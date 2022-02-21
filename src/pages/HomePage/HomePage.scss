@@ -1,0 +1,42 @@
+@import "../../index.scss";
+
+.homepage {
+  background-image: url("../../../public/Images/FondoHome.png");
+  height: 99.5vh;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: calc(15px + 8vw);
+
+  &__lang {
+      margin-top: 20px;
+    height: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    @include desktop {
+      height: 80px;
+      justify-content: flex-end;
+    }
+  }
+  &__title {
+    margin: auto auto;
+  }
+
+  &__footer {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5px;
+
+    @include desktop {
+      margin-bottom: 3.05%;
+    }
+  }
+}

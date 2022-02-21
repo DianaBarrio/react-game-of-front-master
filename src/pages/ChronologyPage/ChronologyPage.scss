@@ -1,0 +1,121 @@
+@import '../../index.scss';
+
+.nav {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 3.75% ;
+
+  @include desktop {
+   
+    justify-content: flex-end;   
+
+  }
+  
+  &__chronology {
+
+      display: flex;
+      align-items: center;     
+      
+  }
+}
+
+
+.btnchrono {
+  font-family: Georgia, "Lato", Times, serif;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  text-align: center;
+  width: 60px;
+  width: 60px;
+  border: 3px solid #fff;
+  background: transparent;
+  color: #fff;
+  border-radius: 50%;
+  padding: 18px;
+  margin: 3px auto;
+}
+
+.chronology {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 68vh;
+  overflow-y: auto;
+  margin: 20px auto;
+
+  @include desktop {    
+    margin: 30px auto;
+    height: 70vh;
+  }
+
+
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1px;
+
+    .arrow {
+      width: 30px;
+      margin: 0 auto;
+      transform: rotate(990deg);
+      transition: 2s;
+      margin-bottom: 4px;
+    }
+
+    .arrow.arrowUp {
+        transform: rotate(90deg);
+        transition: 2s;      
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    margin: 0 auto;
+
+    &--pair {
+        margin-top: 0px;
+      width: 50%;
+      border-right: 1.5px solid rgb(255, 255, 255);
+      transition: 0.5s;
+    }
+    &--odd {
+      width: 50%; 
+      margin-top: 90px;
+      transition: 0.5s;
+    }
+
+    &--pair1 {
+    margin-top: 90px;
+      width: 50%;
+      transition: 0.5s;
+    }
+
+    &--odd1 {
+    margin-top: 0px;
+      width: 50%;
+      border-left: 1.5px solid rgb(255, 255, 255);
+      transition: 0.5s;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 3px;
+    background: rgb(83, 81, 81);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: lightgray;
+
+    width: 3px;
+    border-radius: 20px;
+    height: 5px;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,38 @@
+@import '../../index.scss';
+
+.houses-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 94vw;
+    margin: 20px auto;
+    height: 63vh;
+    overflow-y: auto;
+
+    @include desktop {
+        margin: 30px auto;
+        height: 70vh;       
+    
+    }
+
+    &::-webkit-scrollbar{
+
+        width: 3px;
+        background: rgb(83, 81, 81);
+        
+    }
+
+    &::-webkit-scrollbar-thumb {
+
+        background: lightgray;        
+        
+        width: 3px;
+        border-radius: 20px;
+        height: 5px;
+    } 
+
+    & a {
+        text-decoration: none;
+    }
+   
+}
